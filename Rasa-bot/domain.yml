@@ -1,0 +1,34 @@
+intents:
+- greet
+- get_capital
+- get_population
+- get_continent
+- get_area
+
+slots:
+  country:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: country
+
+responses:
+  utter_greet:
+  - text: "Здравствуйте! Чем я могу вам помочь?"
+  utter_ask_country:
+  - text: "Какую страну вы хотите узнать?"
+  utter_ask_area:
+  - text: " Площадь какую страну хотите узнать?"
+  utter_ask_city:
+  - text: "Какой город вы хотите узнать?"
+  utter_ask_continent:
+  - text: "Какой континент вы хотите узнать?"
+
+entities:
+- country
+
+actions:
+- action_get_capital
+- action_get_population
+- action_get_continent
+- action_get_area

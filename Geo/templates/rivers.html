@@ -1,0 +1,28 @@
+{%extends './base.html'%}
+{%load static%}
+{%block main%}
+<div class="col">
+    {%for river in rivers%}
+    <div class="col">
+            <table class="table table-info">
+                <thead>
+                <h1 class="text-center">{{river.title}}</h1>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Регион</td>
+                    <th scope="row">{{river.region}}</th>
+
+                </tr>
+                <tr>
+                    <td>Протяженность</td>
+                    <th scope="row">{{river.river_length}} в км</th>
+                </tr>
+                <hr>
+                </tbody>
+            </table>
+
+        </div>
+{%endfor%}
+        </div>
+{%endblock%}

@@ -1,0 +1,28 @@
+{%extends './base.html'%}
+{%load static%}
+{%block main%}
+<div class="col" style="background-image: url('../../static/Geo/img/bg-m.jpg')">
+    {%for mountain in mountains%}
+    <div class="col">
+            <table class="table table-warning table-striped-columns">
+                <thead>
+                <h1 class="text-center text-warning">{{mountain.title}}</h1>
+                </thead>
+                <tbody class="opacity-75">
+                <tr>
+                    <td>Регион</td>
+                    <th scope="row">{{mountain.region}}</th>
+
+                </tr>
+                <tr>
+                    <td>Высота</td>
+                    <th scope="row">{{mountain.mountain_height}} м</th>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    <hr>
+{%endfor%}
+        </div>
+{%endblock%}

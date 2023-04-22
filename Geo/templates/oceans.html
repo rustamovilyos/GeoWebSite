@@ -1,0 +1,28 @@
+{%extends './base.html'%}
+{%load static%}
+{%block main%}
+<div class="col">
+    {%for ocean in oceans%}
+    <div class="col">
+            <table class="table table-primary">
+                <thead>
+                <h1 class="text-center">{{ocean.title}}</h1>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Площадь</td>
+                    <th scope="row">{{ocean.square}} км<sup>2</sup></th>
+
+                </tr>
+                <tr>
+                    <td>Высота в м</td>
+                    <th scope="row">{{ocean.description}}</th>
+                </tr>
+                <hr>
+                </tbody>
+            </table>
+
+        </div>
+{%endfor%}
+        </div>
+{%endblock%}

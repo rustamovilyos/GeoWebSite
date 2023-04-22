@@ -1,0 +1,7 @@
+action_endpoint:
+  # regions = us, eu, au, ap, sa, jp, in
+  # ngrok http 5055 --region eu
+#  url: "https://560d-146-120-15-198.ngrok-free.app/webhook"
+
+  # localhost
+   url: "http://localhost:5055/webhook"

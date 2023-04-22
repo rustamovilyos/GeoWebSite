@@ -1,0 +1,31 @@
+version: "3.0"
+
+rules:
+- rule: Приветствие
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Получение столицы
+  steps:
+    - intent: get_capital
+    - action: action_get_capital
+
+- rule: Получение населения
+  steps:
+    - intent: get_population
+    - action: action_get_population
+
+- rule: Получение континента
+  steps:
+    - intent: get_continent
+    - action: action_get_continent
+
+- rule: Получение площадь
+  steps:
+    - intent: get_area
+    - action: action_get_area
+
+- rule: Непонятно
+  steps:
+    - action: utter_confused

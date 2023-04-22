@@ -1,0 +1,40 @@
+version: "3.0"
+
+stories:
+  # story 1
+  - story: greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  # story 2
+  - story: get capital
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: get_capital
+      - action: action_get_capital
+
+  # story 3
+  - story: get population
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: get_population
+      - action: action_get_population
+
+  # story 4
+  - story: get continent
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: get_continent
+      - action: action_get_continent
+
+  # story 5
+  - story: get area
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: get_area
+      - action: action_get_area
